@@ -85,9 +85,9 @@ APP.Main = (function() {
     }
 
     // Colorize on complete.
-    if (storyLoadCount === 0)
-      colorizeAndScaleStories();
-  }
+  //   if (storyLoadCount === 0)
+  //     colorizeAndScaleStories();
+  // }
 
   function onStoryClick(details) {
 
@@ -302,7 +302,7 @@ APP.Main = (function() {
     var scrollTopCapped = Math.min(70, main.scrollTop);
     var scaleString = 'scale(' + (1 - (scrollTopCapped / 300)) + ')';
 
-    colorizeAndScaleStories();
+    // colorizeAndScaleStories();
 
     header.style.height = (156 - scrollTopCapped) + 'px';
     headerTitles.style.webkitTransform = scaleString;
